@@ -13,7 +13,7 @@ export default function App() {
     setError(false);
 
     try {
-      const res = await axios.get("http://127.0.0.1:8000/api/run-script");
+      const res = await axios.get("https://switch-test-backend.vercel.app/");
       const data = res.data;
 
       if (data.success) {
